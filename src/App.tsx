@@ -12,12 +12,12 @@ function App() {
       <section className="w-full max-w-4xl rounded-3xl border border-white/70 bg-white/80 p-5 shadow-xl shadow-slate-300/50 backdrop-blur-sm sm:p-8">
         <header className="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-teal-700">
-              Salary Rate Calculator
-            </p>
-            <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-              Online Salary Calculator
-            </h1>
+            <div className="flex items-center gap-3">
+              <img src="/favicon.svg" alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
+              <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+                Online Salary Calculator
+              </h1>
+            </div>
             <p className="mt-2 max-w-xl text-sm text-slate-600">
               Edit any salary or working hours field and all related values will recalculate
               automatically.
