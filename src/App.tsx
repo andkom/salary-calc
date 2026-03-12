@@ -13,7 +13,7 @@ function App() {
         <header className="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <div className="flex items-center gap-3">
-              <img src="/favicon.svg" alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
+              <img src="favicon.svg" alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
               <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
                 Online Salary Calculator
               </h1>
