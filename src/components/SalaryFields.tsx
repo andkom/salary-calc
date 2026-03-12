@@ -43,7 +43,7 @@ export default function SalaryFields() {
   return (
     <article className="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 sm:p-5">
       <h2 className="mb-1 text-sm font-bold uppercase tracking-[0.12em] text-slate-500">
-        Salary Amounts
+        Salary Rates
       </h2>
       <p className="mb-4 text-xs text-slate-500">
         Change one value and the other salary fields stay in sync.
