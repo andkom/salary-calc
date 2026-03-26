@@ -6,7 +6,7 @@ The app recalculates salary values across periods (`hour`, `day`, `week`, `month
 
 ## Live Demo
 
-[Salary Calculator](https://andkom.github.io/salary-calc)
+[Salary Calculator](https://salr.vercel.app)
 
 ![Salary Calculator UI](./calc.png)
 
