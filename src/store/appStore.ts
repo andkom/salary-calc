@@ -23,6 +23,8 @@ type FrankfurterLatestResponse = {
   rates?: Record<string, number>;
 };
 
+const FRANKFURTER_V1_API = 'https://api.frankfurter.dev/v1';
+
 type AppStore = {
   currency: CurrencyCode;
   recentCustomCurrency: CurrencyCode | null;
@@ -119,7 +121,7 @@ export const useAppStore = create<AppStore>((set, get) => ({
     set({ currenciesLoading: true, currenciesError: '' });
 
     try {
-      const response = await fetch('https://api.frankfurter.app/currencies');
+      const response = await fetch(`${FRANKFURTER_V1_API}/currencies`);
       if (!response.ok) {
         throw new Error(`Failed to fetch currencies: ${response.status}`);
       }
@@ -155,7 +157,7 @@ export const useAppStore = create<AppStore>((set, get) => ({
     set({ ratesLoading: true, ratesError: '', rateRequestId: requestId });
 
     try {
-      const response = await fetch(`https://api.frankfurter.app/latest?from=USD&to=${currency}`);
+      const response = await fetch(`${FRANKFURTER_V1_API}/latest?base=USD&symbols=${currency}`);
       if (!response.ok) {
         throw new Error(`Failed to fetch rates: ${response.status}`);
       }
